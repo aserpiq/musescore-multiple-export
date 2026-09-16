@@ -1,0 +1,66 @@
+name: Validate
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Validate version
+        shell: python
+        run: |
+          import pathlib
+          import re
+          import sys
+
+          qml_path = pathlib.Path("MultipleExport.qml")
+          version_path = pathlib.Path("VERSION")
+
+          if not qml_path.exists():
+              print("MultipleExport.qml not found")
+              sys.exit(1)
+
+          if not version_path.exists():
+              print("VERSION not found")
+              sys.exit(1)
+
+          qml = qml_path.read_text(encoding="utf-8")
+          version = version_path.read_text(encoding="utf-8").strip()
+
+          if not re.fullmatch(r"\d+\.\d+\.\d+", version):
+              print(f"Invalid VERSION: {version}")
+              sys.exit(1)
+
+          match = re.search(
+              r'^\s*version:\s*"(\d+\.\d+\.\d+)"',
+              qml,
+              re.MULTILINE
+          )
+
+          if not match:
+              print("Plugin version not found")
+              sys.exit(1)
+
+          qml_version = match.group(1)
+
+          if qml_version != version:
+              print(
+                  f"Version mismatch: "
+                  f"VERSION={version}, "
+                  f"MultipleExport.qml={qml_version}"
+              )
+              sys.exit(1)
+
+          print(f"Multiple Export {version} validated")
