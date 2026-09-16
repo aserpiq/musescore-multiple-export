@@ -8,7 +8,7 @@
   <a href="https://github.com/aserpiq/musescore-multiple-export/releases"><img src="https://img.shields.io/github/downloads/aserpiq/musescore-multiple-export/total?style=flat-square&label=downloads&labelColor=1b1b1b&color=8A2BE2" alt="Downloads"></a>&nbsp;&nbsp;
   <a href="https://github.com/aserpiq/musescore-multiple-export/stargazers"><img src="https://img.shields.io/github/stars/aserpiq/musescore-multiple-export?style=flat-square&label=stars&labelColor=1b1b1b&color=4F7CFF" alt="Stars"></a>&nbsp;&nbsp;
   <a href="LICENSE"><img src="https://img.shields.io/github/license/aserpiq/musescore-multiple-export?style=flat-square&label=license&labelColor=1b1b1b&color=8A2BE2" alt="License"></a>&nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/MuseScore-4.7.x-8A2BE2?style=flat-square&labelColor=1b1b1b" alt="MuseScore 4.7.x">
+  <img src="https://img.shields.io/badge/MuseScore-4.7.+-8A2BE2?style=flat-square&labelColor=1b1b1b" alt="MuseScore 4.7.+">
 </p>
 
 # Multiple Export
@@ -55,6 +55,10 @@ The plugin remembers the folder and selected formats for each score, so you don'
 
 You can still change the selection before each export.
 
+<p align="center">
+  <img src=".images/s1.png" alt="Multiple Export main window" width="720">
+</p>
+
 ## Format options
 
 Some formats also have an **Options...** button.
@@ -73,6 +77,10 @@ You can choose the bitrate:
 * 256 kbps
 * 320 kbps
 
+<p align="center">
+  <img src=".images/s2.png" alt="MP3 export format options" width="720">
+</p>
+
 ### PNG
 
 You can change:
@@ -80,6 +88,10 @@ You can change:
 * DPI
 * whitespace trimming
 * trim margin
+
+<p align="center">
+  <img src=".images/s4.png" alt="PNG export format options" width="720">
+</p>
 
 ### SVG
 
@@ -144,6 +156,10 @@ The last configuration used for a score is loaded automatically the next time yo
 ## Progress window
 
 When exporting, the plugin shows a small progress window with the format currently being processed.
+
+<p align="center">
+  <img src=".images/s3.png" alt="Multiple Export progress window" width="720">
+</p>
 
 Some MuseScore export functions are synchronous, especially audio rendering, so MuseScore may temporarily look frozen while exporting a large MP3 or WAV file.
 
