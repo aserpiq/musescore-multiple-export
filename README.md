@@ -22,6 +22,16 @@ then MP3, then MIDI, then MusicXML...
 
 With this plugin I can select everything I need once and export it from a single window ^^
 
+<br>
+
+<p align="center">
+  <a href="https://github.com/aserpiq/musescore-multiple-export/releases/latest">
+    <strong>Download the latest release</strong>
+  </a>
+</p>
+
+<br>
+
 ## What it does
 
 Multiple Export lets you choose an export folder and generate several formats in one go.
