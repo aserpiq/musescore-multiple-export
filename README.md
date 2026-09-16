@@ -2,6 +2,14 @@
   <img src=".images/logo.png" alt="Multiple Export logo" width="520">
 </p>
 
+<p align="center">
+  <a href="https://github.com/aserpiq/musescore-multiple-export/releases"><img src="https://img.shields.io/github/v/release/aserpiq/musescore-multiple-export?style=flat-square&label=release&labelColor=1b1b1b&color=8A2BE2" alt="Release"></a>&nbsp;&nbsp;
+  <a href="https://github.com/aserpiq/musescore-multiple-export/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/aserpiq/musescore-multiple-export/validate.yml?branch=main&style=flat-square&label=build&labelColor=1b1b1b&color=4F7CFF" alt="Build"></a>&nbsp;&nbsp;
+  <a href="https://github.com/aserpiq/musescore-multiple-export/releases"><img src="https://img.shields.io/github/downloads/aserpiq/musescore-multiple-export/total?style=flat-square&label=downloads&labelColor=1b1b1b&color=8A2BE2" alt="Downloads"></a>&nbsp;&nbsp;
+  <a href="https://github.com/aserpiq/musescore-multiple-export/stargazers"><img src="https://img.shields.io/github/stars/aserpiq/musescore-multiple-export?style=flat-square&label=stars&labelColor=1b1b1b&color=4F7CFF" alt="Stars"></a>&nbsp;&nbsp;
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/aserpiq/musescore-multiple-export?style=flat-square&label=license&labelColor=1b1b1b&color=8A2BE2" alt="License"></a>&nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/MuseScore-4.7.x-8A2BE2?style=flat-square&labelColor=1b1b1b" alt="MuseScore 4.7.x">
+</p>
 
 # Multiple Export
 
