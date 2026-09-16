@@ -1,3 +1,8 @@
+<p align="center">
+  <img src=".images/logo.png" alt="Multiple Export logo" width="520">
+</p>
+
+
 # Multiple Export
 
 A small MuseScore 4 plugin to export the current score to several formats at once.
