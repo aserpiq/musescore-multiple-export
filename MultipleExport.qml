@@ -8,7 +8,7 @@ MuseScore {
 
     title: "Multiple export"
     description: "Export the current score to multiple formats with optional per-format overrides."
-    version: "1.0.0"
+    version: "1.0.0" // x-release-please-version
     requiresScore: true
     pluginType: "command"
 
